@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <title>UrlShortener</title>
+    <style>
+      form {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="POST" action="/url">
+      <h1>ShortUrl</h1>
+      <label for="slug">Slug (optional)</label>
+      <input placeholder="Slug" name="slug" />
+
+      <label for="slug">Url</label>
+      <input placeholder="URL" name="url" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

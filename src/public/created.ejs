@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <title>Redirect</title>
+    <style>
+      form {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>ShortUrl</h1>
+      <table>
+        <tr>
+          <td><b>Slug:</b></td>
+          <td><%= redirect.slug %></td>
+        </tr>
+        <tr>
+          <td><b>ShortUrl:</b></td>
+          <td>
+            <a href="<%= [base,redirect.slug].join('/') %>"
+              ><%= [base,redirect.slug].join('/') %></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><b>Url:</b></td>
+          <td><%= redirect.url %></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
